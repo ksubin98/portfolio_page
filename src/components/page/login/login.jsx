@@ -10,7 +10,7 @@ const Login = ({user}) => {
         <section className={styles.loginBox}>
             <Header />
             <section className={styles.login}>
-                <h1 className={styles.title}>Login</h1>
+                <h1 className={styles.title}>L O G I N</h1>
                 <section className={styles.login_ser}>
                     <ul className={styles.email_login}>
                         <form className={styles.inputBox}>

@@ -1,0 +1,37 @@
+.loginBox {
+  width: 40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: #424242;
+  display: flex;
+  text-align: center;
+}
+
+.login_ser {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.email_login {
+  list-style: none;
+}
+
+.inputBox {
+  margin: 0.2rem, 0;
+  width: 100%;
+}
