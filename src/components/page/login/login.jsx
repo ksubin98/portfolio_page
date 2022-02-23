@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import Header from '../../element/header/header';
+import Footer from '../../element/footer/footer';
 import styles from './login.module.css';
 
 const Login = ({user}) => {
@@ -6,7 +8,7 @@ const Login = ({user}) => {
 
     return (
         <section className={styles.loginBox}>
-
+            <Header />
             <section className={styles.login}>
                 <h1 className={styles.title}>Login</h1>
                 <section className={styles.login_ser}>
@@ -27,16 +29,18 @@ const Login = ({user}) => {
                                 placeholder="Password"
                                 name="password"
                             />
-                            <button className={styles.loginBtn}>Login</button>
                             </li>
                         </form>
-                        <div className={styles.signup}>
-                            
-                        </div>
+                        <button className={styles.loginBtn}>Login</button>
+                        <button className={styles.signupBtn}>SignUp</button>
+                    </ul>
+                    <ul className={styles.sns_login}>
+                        <button className={`${styles.list} ${styles.google}`}>Google</button>
+                        <button className={`${styles.list} ${styles.facebook}`}>Facebook</button>
                     </ul>
                 </section>
             </section>
-
+        <Footer />
         </section>
     )
 
