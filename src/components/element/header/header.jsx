@@ -10,7 +10,7 @@ const Header = ({onLogout}) => {
                     <button className={styles.logout}>Logout</button>
                 )
             }
-            <h1 className={styles.title}>Portfolio</h1>
+            <h1 className={styles.title}>P O R T F O L I O</h1>
         </header>
     )
 };
