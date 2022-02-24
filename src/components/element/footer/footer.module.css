@@ -1,0 +1,12 @@
+.footer {
+  background-color: #486966;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_text {
+  font-size: large;
+  height: 100%;
+  color: #b2bebf;
+  font-weight: normal;
+}
