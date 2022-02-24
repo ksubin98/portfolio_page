@@ -12,28 +12,24 @@ const Login = ({user}) => {
             <section className={styles.login}>
                 <h1 className={styles.title}>L O G I N</h1>
                 <section className={styles.login_ser}>
-                    <ul className={styles.email_login}>
+                    <div className={styles.email_login}>
                         <form className={styles.inputBox}>
-                            <li>
                             <input 
                                 type="text"
                                 className={styles.input}
                                 placeholder="Email"
                                 name="email"
                             />
-                            </li>
-                            <li>
                             <input 
                                 type="password"
                                 className={styles.input}
                                 placeholder="Password"
                                 name="password"
                             />
-                            </li>
                         </form>
                         <button className={styles.loginBtn}>Login</button>
                         <button className={styles.signupBtn}>SignUp</button>
-                    </ul>
+                    </div>
                     <ul className={styles.sns_login}>
                         <button className={`${styles.list} ${styles.google}`}>Google</button>
                         <button className={`${styles.list} ${styles.facebook}`}>Facebook</button>
