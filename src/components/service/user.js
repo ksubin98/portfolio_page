@@ -1,17 +1,10 @@
-import {
-    firebaseAuth,
-    signInWithPopup,
-    googleProvider,
-    facebookProvider
-} from 'firebase/auth';
+import firebase from 'firebase';
+import { firebaseAuth,googleProvider, facebookProvider } from './firebase';
 
 
 class User {
-    login(providerName){
-        const authProvider = this.getProvider(providerName);
-        return signInWithPopup(authProvider);
-    }
-    signIn (email, password) {
+
+    login (email, password) {
         return firebaseAuth.signInWithEmailAndPassword(email, password);
     }
     signUp (email, password) {
