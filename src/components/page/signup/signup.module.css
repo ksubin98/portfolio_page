@@ -23,7 +23,7 @@
 
 .signup_div {
   padding: 1rem;
-  width: 50%;
+  width: 80%;
 }
 
 .signup_text {
@@ -51,7 +51,7 @@
 }
 
 .signup_btn {
-  width: 50%;
+  width: 80%;
   border-radius: 0.5rem;
   color: #757575;
   font-weight: bold;
@@ -61,7 +61,7 @@
 }
 
 .signin {
-  width: 50%;
+  width: 80%;
   border-radius: 0.5rem;
   color: #757575;
   font-weight: bold;
