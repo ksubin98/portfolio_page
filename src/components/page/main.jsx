@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
+import Typewriter from 'typewriter-effect';
 import About from './about';
 
 const Container = styled.div`
@@ -80,7 +81,15 @@ const Main = () => {
   <Container>
     <Title>안녕하세요.</Title>
     <WordContainer>
-      <Title2>{word}</Title2>
+      <Title2>
+        <Typewriter 
+          options={{
+            strings: ['마케팅하는', '기획하는', '소통하는'],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </Title2>
     </WordContainer>
     <Title3>프론트엔드 개발자 권수빈입니다.</Title3>
 
