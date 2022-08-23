@@ -4,6 +4,7 @@ import './app.css';
 import About from './components/page/about';
 import Contact from './components/page/contact';
 import Main from './components/page/main';
+import Project from './components/page/project';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/Contact">
             <Contact />
+          </Route>
+          <Route path="/Project">
+            <Project />
           </Route>
         </Switch>
       </Router>
