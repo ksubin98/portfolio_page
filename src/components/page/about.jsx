@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import {BiRightArrow} from 'react-icons/bi';
-import {MdOutlineSubdirectoryArrowRight} from 'react-icons/md';
 import {ImHtmlFive} from 'react-icons/im';
 import {SiCss3, SiJavascript, SiReact, SiArduino, SiGit, SiGithub, SiNotion, SiSlack} from 'react-icons/si';
 import profilePhoto from '../../img/profile.jpg';
+
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+`
 
 const AboutMeContainer = styled.div`
   display: inline-flex;
@@ -29,34 +33,41 @@ const PhotoImg = styled.img`
 
 const AboutMeBox = styled.div`
   text-align: initial;
+  border-style: solid;
+  border-radius: 5px;
   .AboutTitle {
     margin-left: -2.5em;
     text-align: center;
   }
 ` 
 const SkillContainer = styled.div`
-  display: inline-flex;
+  display: inline-inline;
   align-items: center;
   justify-items: center;
-  margin-top: 5rem;
-  width: 70%;
+  align-content: space-around;
+  margin-top: 3rem;
+  width: 80%;
+  height: 300px;
+`
+const SkillTitle = styled.h2`
+  margin-left: 10em;
 `
 
 const SkillBox = styled.div`
-  text-align: initial;
-  margin-left: 35%;
-
-.SkillTitle {
-  margin-left: -3em;
-  text-align: center;
-}
-
+  display: block;
+  margin-left: 20em;
+  
+  .icon {
+    font-size: 110px;
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+  }
 ` 
 
 const About = (props) => {
 
   return (
-    <>
+    <Container>
       <AboutMeContainer>
       <PhotoContainer>
         <PhotoImg
@@ -65,8 +76,7 @@ const About = (props) => {
       </PhotoContainer>
         <AboutMeBox>
           <h2 className='AboutTitle'>About Me</h2>
-          <span><BiRightArrow /> 제가 만드는 기능들로 더 나은 내일이 되기를 바라는 개발자 권수빈입니다.</span>
-          <p><BiRightArrow /> 제가 추구하고 제공하는 서비스들로 더 나은 삶이 되기를 바라는 마케터 권수빈입니다.</p>
+          <span><BiRightArrow /> 제가 만드는 서비스들로 더 나은 내일이 되기를 바라는 개발자 권수빈입니다.</span>
           {/*css로 간격 띄우기*/}
           <p><BiRightArrow /> 새로운 것을 배우고, 다양하게 사용해보려 합니다.</p>
           <p><BiRightArrow /> 사람들과의 소통을 중요시 생각하며, 자유롭게 피드백을 주고받으며 같이 성장하려 합니다.</p>
@@ -74,15 +84,20 @@ const About = (props) => {
         </AboutMeBox>
       </AboutMeContainer>
       <SkillContainer>
+        <SkillTitle>Skills</SkillTitle>
         <SkillBox>
-          <h2 className='SkillTitle'>Skills</h2>
-          {/* 각 스킬에 맞는 이미지 첨부하여 디자인 하기 */}
-            <span className='SkillIcon'><ImHtmlFive/> <SiCss3/> <SiJavascript/> <SiReact/> </span>
-            <p><SiArduino/> <SiGit/> <SiGithub/></p>
-            <p><SiNotion/> <SiSlack/></p>
+            <ImHtmlFive className='icon' color='#ff5722'/>
+            <SiCss3 className='icon' color='#1976d2'/> 
+            <SiJavascript className='icon' color='#ffb300'/>
+            <SiReact className='icon' color='#42a5f5'/>
+            <SiArduino className='icon' color='#26a69a'/> 
+            <SiGit className='icon' color='#e57373' /> 
+            <SiGithub className='icon'/>
+            <SiNotion className='icon'/> 
+            <SiSlack className='icon' color='#aed581'/>
         </SkillBox>
       </SkillContainer>
-    </>
+    </Container>
   )
 }
 
