@@ -4,6 +4,7 @@ import {BiRightArrow} from 'react-icons/bi';
 import {ImHtmlFive} from 'react-icons/im';
 import {SiCss3, SiJavascript, SiReact, SiArduino, SiGit, SiGithub, SiNotion, SiSlack} from 'react-icons/si';
 import profilePhoto from '../../img/profile.jpg';
+import Navbar from '../element/navbar';
 
 const Container = styled.div`
   width: 100%;
@@ -68,6 +69,7 @@ const About = (props) => {
 
   return (
     <Container>
+      <Navbar />
       <AboutMeContainer>
       <PhotoContainer>
         <PhotoImg
